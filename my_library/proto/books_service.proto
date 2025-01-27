@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package glibrary.books;
+package my_library.books;
 
 service BooksService {
     rpc GetBooks (BooksRequest) returns (BooksResponse) {}
