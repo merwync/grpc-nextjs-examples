@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package glibrary.books;
+
+service BooksService {
+    rpc GetBooks (BooksRequest) returns (BooksResponse) {}
+}
+
+message BooksRequest {}
+
+message Book {
+    string isbn = 1;
+    string name = 2;
+    string author = 3;
+    string format = 4;
+}
+
+message BooksResponse {
+    repeated Book book = 1;
+}
